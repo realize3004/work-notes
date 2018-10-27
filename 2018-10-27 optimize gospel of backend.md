@@ -19,7 +19,9 @@ gp__( '心灵港湾', 'page-gospel' )
 
 ## Solution
 1. 将所有操作`video`的方法是用`gp_get_data()`来处理,让其能读到缓存,减少不必要的资源消耗
-2. 将分类初始化信息分割出来调用缓存,并实现以下方法
+2. 定义`$this->set_all_videos()`方法,当调用`$this->all_videos`在进行赋值
+3. 取消`gp_get_data`中的`functions`
+4. 将分类初始化信息分割出来调用缓存,并实现以下方法
 ```php
 	/**
 		 * 获取redis缓存数据
