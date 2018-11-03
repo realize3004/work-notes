@@ -100,4 +100,4 @@ include_once( get_stylesheet_directory() . '/news-pro-modify/backend/init.php' )
     ?>
     ```
 
-20. 修改`/wp-content/themes/news-pro/news-pro-modify/backend/lib/schemaSeo.php`中的`logo`描述信息.
+20. 修改`Appearance`->`Customize`->`Site Identity`中的上传logo.
