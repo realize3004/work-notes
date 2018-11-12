@@ -101,3 +101,18 @@ include_once( get_stylesheet_directory() . '/news-pro-modify/backend/init.php' )
     ```
 
 20. 修改`Appearance`->`Customize`->`Site Identity`中的上传logo.
+
+
+# 2018年11月12日上传记录
+
+1. 替换`news-pro-modify`文件夹
+
+2. 上传`page-video.php`,`page-pictures.php`,'category.php`
+
+3. 分别完成后台小工具 `Video Recommend`,`Video Page Content`,`Video Sidebar`与`Pictures Recommend`,`Pictures Page Content`,`Pictures Sidebar`中的小工具.
+   按照顺序每个小工具依次添加一下小工具
+   + `Recommend Post`
+   + `Genesis - Featured Posts-pro`
+   + `Genesis - Featured Posts-pro`
+
+4. 分别建立`video`与`pictures`页面
