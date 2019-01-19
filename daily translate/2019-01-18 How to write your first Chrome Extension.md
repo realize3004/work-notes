@@ -106,7 +106,7 @@ Chrome Extension 允许你添加一些功能到Chrome浏览器上,而不需要�
 # 效果
 现在只需要一个小小的`manifest.json`文件和一些HTML,CSS与Javascript文件,你可以在每个`tab`上找到一些有趣的东西.
 
-![gif](https://cdn-images-1.medium.com/max/1600/1*P8NTRn4MiIARJCM83SUxKg.gif)
+![](https://cdn-images-1.medium.com/max/1600/1*P8NTRn4MiIARJCM83SUxKg.gif)
 
 # 步骤4: 发布它!
 当你第一个Chrome插件效果不错并且还能成功运行,这时候该把它发布到Chrome Store里面去了.
