@@ -2,12 +2,12 @@
 
 >[原文](https://medium.freecodecamp.org/how-to-create-and-publish-a-chrome-extension-in-20-minutes-6dc8395d7153)
 
-有没有想过创建Chrome extension是怎么样的?我在这里告诉你它有多简单.跟着这些步骤,你的想法将会变成现实,并且你可以立刻发布一个真正的`extension`在Chrome商店中.
+有没有想过创建Chrome extension会是怎么样的?在这里我会告诉你它有多简单,跟着这些步骤走你的想法将会变成现实!并且你可以立刻发布一个真正的`extension`在Chrome商店中.
 
 # 什么是Chrome Extension?
-Chrome Extension 允许你添加一些功能到Chrome浏览器上,而不需要修改页面源代码.这很厉害,因为你可以用Web开发者最熟悉的核心知识`CSS`,`HTML`,`Javascript`来为Chrome开发一个新插件.如果你曾经开发过网页,你将有能力比吃午饭还快的创建一个插件.你只需要学习一件事,如何使用Chrome暴露出来的`Javascript API`添加一些功能到Chrome上.
+Chrome Extension 允许你添加一些功能到Chrome浏览器上,而不需要修改页面源代码.这很厉害,因为你可以用Web开发者最熟悉的核心知识`CSS`,`HTML`,`Javascript`来为Chrome开发一个新插件.如果你曾经有开发网页的经验,那么开发一个插件甚至比你吃一顿饭还快.你唯一需要学习的事是如何使用Chrome提供出来的`Javascript API`添加一些功能到Chrome上.
 
-如果你还没能力开发一个Web页面,我建议还是先通过一些免费的资源去学习如何开发,比如 [freeCodeCamp](https://www.freecodecamp.org/)
+如果你还没有开发页面的经验,我建议还是先通过一些免费的资源去学习如何开发,比如 [freeCodeCamp](https://www.freecodecamp.org/)
 
 # 你想开发什么功能?
 在你开发之前,你需要对你想要开发的功能有个大致的想法.它并不需要是一些开创性的想法,我们可以仅仅为了好玩去开发.在这篇文章中,我将会告诉你我的想法还有如何在一个Chrome Extension中实现它.
