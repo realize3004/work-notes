@@ -29,21 +29,15 @@ Chrome Extension 允许你添加一些功能到Chrome浏览器上,而不需要�
 
 ```json
     {
-     // manifest版本, 不需要做改动
      "manifest_version": 2,
-     // 插件名
      "name": "RaterFox",
-     // 描述
      "description": "The most popular movies and TV shows in your   default tab. Includes ratings, summaries and the ability to watch trailers.",
-     // 插件版本
      "version": "1",
-     // 作者名
      "author": "Jake Prins",
      "browser_action": {
        "default_icon": "tab-icon.png",
        "default_title": "Have a good day"
       },
-     // url地址覆盖
      "chrome_url_overrides" : {
       "newtab": "newtab.html"
      },
@@ -65,6 +59,91 @@ Chrome Extension 允许你添加一些功能到Chrome浏览器上,而不需要�
  },
 ```
 现在,`popup.html` 将会在弹出窗口里面被渲染,这个弹窗是为了响应用户点击浏览器的行为而创建.
+这是一个标准的html文件,你可以自由的控制它的显示.
+你只需要发挥一些才华在这个名叫`popup.html`的文件里.
 
+# 步骤2: 测试是否运行成功
+下一步是创建一个`newtab.html`并且写入一个`Hello World`:
+```html
+<!doctype html>
+<html>
+  <head>
+    <title>Test</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+  </body>
+</html>
+```
 
+如果要测试他是否成功运行, 用你的chrome浏览器访问`chrome://extensions`并且在右上角勾选上`Developer mode`.
 
+![DM](https://cdn-images-1.medium.com/max/1600/1*6eljnFW72RcJMOKxF2c-ag.png)
+
+点击`Load unpacked extension`并且选择你插件文件所在的目录.
+如果插件运行成功,它将马上被激活,然后在你新开的`tab`页面中,将会看到`Hello World`
+
+# 步骤3: 美化!
+现在我们第一个功能已经运行成功,现在是时候美化它了,
+我们可以通过在插件目录创建`main.css`文件对其进行简单的样式处理并且在`newtab.html`文件中引用它.
+同理如果你要在js文件中实现任何的功能也可以通过这种方式引用.
+假设如果你之前开发过web页面,现在你可以通过你的才华让用户看到你想要的效果.
+
+# 收尾
+我还需要完成这个movie插件所包含的HTML,CSS与Javascript,我觉得只需要快速的搞定它们,而不需要在这里对代码有过多的描述.
+
+下面是我所做的:
+
+在我的想法中需要一些非常好看的背景图片,所以在Javascript文件中我使用了[TMDb API](https://www.themoviedb.org/)来抓取一些热门的电影.
+并且我拿到了它们的背景图并且把它们塞入到一个数组里面.
+每当这个页面加载时,它马上会随机从数组里面取出一个图片并把它设置为页面的背景图.
+为了使这个页面更有趣些,我还把当前时间添加到了页面右上角.
+为了得到更多的信息,它允许当用户点击背景图时跳转到IMDb的页面.
+
+当用户试图往下滚动时,我把一个热门电影替换了当前显示区域.我使用了相同的API用于创建相同的电影卡片,其中包含图片,标题,评分和投票数.
+然后当点击任何一张卡片时,它会显示描述还有一个可以观看预告片的按钮.
+
+# 效果
+现在只需要一个小小的`manifest.json`文件和一些HTML,CSS与Javascript文件,你可以在每个`tab`上找到一些有趣的东西.
+
+![gif](https://cdn-images-1.medium.com/max/1600/1*P8NTRn4MiIARJCM83SUxKg.gif)
+
+# 步骤4: 发布它!
+当你第一个Chrome插件效果不错并且还能成功运行,这时候该把它发布到Chrome Store里面去了.
+点击这个[链接](https://chrome.google.com/webstore/developer/dashboard)将会跳转到Chrome商店的管理页面(如果你还没登入,将会要求你登入google账号).
+然后点击`Add New Item`(添加新内容)按钮,接受条款(有趣的事是如果你第一次上传插件,需要花$5的注册费)然后将跳转到插件上传页面.
+现在你可以在这张页面上传插件的目录压缩后的zip文件.
+
+![upload](https://cdn-images-1.medium.com/max/1600/1*qZs4NLeppLeQl_StCG7mGw.png)
+
+等待上传完成后,将会看到一个添加更多关于这个插件信息的表单.
+你可以添加Icon,详细的描述,上传一些截图等等之类的.
+
+确保你提供了一些图片来展示你的插件,这些图片有助于商店推广你的插件.
+提供的图片越多,你的插件也就会越突出.
+你可以通过点击`Preview Change`按钮来阅览你的插件在Chrome商店里面的展示效果.
+如果你对展示结果满意,点击`Publish changes`即可.
+
+现在你可以通过插件的名称在Chrome商店中进行搜索(在你上传它之后可能需要一段时间才能展示出来).
+如果你对此有兴趣,你可以找到[我的插件](https://chrome.google.com/webstore/detail/raterfox-popular-movies-t/pbmdibcifmempicdafabdakcoamfobik)
+
+现在剩下唯一要做的事就是让更多的用户使用它.所以你可能想要分享一篇关于Chrome插件改变你生活的文章到社交平台上.
+告诉你的朋友们去下载它.
+别忘记分享你的项目在这篇文章下面的评论里面.
+我很好奇想看到你都有哪些想法.
+
+# 总结
+开发一个Chrome插件对于一个web开发人员来说是小菜一碟的事.
+你所需要的能力只不过是一些HTML,CSS,Javascript和会使用一些Chrome提供的基本的API.
+你可以仅仅在20分钟内,完成搭建项目并上传到Chrome商店.
+开发一个新的插件,让它变得有价值或者效果不错将会花费一些时间,但那完全取决于你.
+
+使用你的创造力开发一些有趣的东西,如果你遇到一些困难,[Chrome](https://developer.chrome.com/extensions)非常优秀的文档可以帮助你.
+
+嗯...那你现在还在等什么?现在是时候开始着手开发了,把你的想法变成现实吧!
+
+再罗嗦一句,别忘记了在下面的评论中分享你的项目,如果你觉得这篇文章对你有用,别忘记了点赞啊!
+如果你闲着没事干,还可以给[我的插件](https://chrome.google.com/webstore/detail/raterfox-popular-movies-t/pbmdibcifmempicdafabdakcoamfobik)来个五星好评.
+我会非常感谢的.
+
+遇到问题?想反馈?在评论中描述它.
