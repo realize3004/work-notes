@@ -4,29 +4,30 @@
 
 ![Banner](https://cdn-images-1.medium.com/max/1600/1*rjUML9TK5Pb8u6bM3N9CSw.png)
 
-众所周知,数字世界是一个多层次的,它将几种技术组合在一起通过屏幕为你提供用户体验.
+我们都知道,数字技术将几种技术组合在一起并通过屏幕给我们提供不同的用户体验.可以说它的多层次的.
 
-如果你想知道页面和网站是怎么促进你业务增长的,这背后有很多东西,包括[top full stack web development companies](https://medium.com/swlh/20-web-development-companies-to-hire-best-website-developers-b778545efa3c?utm_source=jstrends_relblog_mediumhack&utm_medium=mantra)
-在这片文章中,我们将分解你所需要知道的技术/趋势
+如果你想知道为什么一个网页或者网站能给你的业务带来利润,这背后可包含着很多东西,包括[top full stack web development companies](https://medium.com/swlh/20-web-development-companies-to-hire-best-website-developers-b778545efa3c?utm_source=jstrends_relblog_mediumhack&utm_medium=mantra)
 
-对于Javascript的开发正在日新月异的发生着改变,特别是在过去的12个月中.同样2018年也有很多的动态,
-[front-end web development](https://www.valuecoders.com/hire-developers/hire-front-end-developers?utm_source=jstrends_home_mediumhack&utm_medium=mantra)中有很多改变与新倡议.
-成为Javascript首选框架之间的竞争已经在持续升温,
-现在更多的项目开始使用React.js与Vue.js,已经远超Angular.js.
+在这片文章中,我将具体分解你所需要知道的技术与趋势
 
-如果你是一个刚启动的公司或者小公司,那么对于过去一年中出现的一些新趋势来说是值得一看的.
-对于创新的项目来说,这些新的框架与集成将会是你入门的关键所在.
+对于Javascript的开发来说无时不刻的在经历着日新月异的变化,2018变也有很多新的变化特别是在过去的12个月中,
+[front-end web development](https://www.valuecoders.com/hire-developers/hire-front-end-developers?utm_source=jstrends_home_mediumhack&utm_medium=mantra)中发布了很多更新与倡议.
+谁将会成为Javascript的首选框架?这个问题已经再持续发酵.
+现在更多的项目开始使用React.js与Vue.js,其数量已远超Angular.js.
+
+如果你是一个小白,那么对于过去一年中出现的新趋势还是值得引起你的注意的.
+如果你要开发新的项目,这些框架与集成将直接成为你入门的关键所在.
 
 让我们来看看Javascript的主要趋势,这样你就可以在开发之前掌握最新的知识.
 
 ##  1) GraphQL
 ![GraphQl](https://cdn-images-1.medium.com/max/1600/1*06BrarH17nDchDAB5PQItA.png)
 
-多数人认为GraphQL在未来将会替代 REST APIs的地位,然而它俩并不可能成为竞争对手,因为它俩不相上下.
+多数人认为GraphQL在未来将会替代 REST APIs的地位.然而它俩并不可能成为竞争对手,因为其不相上下,没有啥可比性.
 
-GraphQl是一个查询语言,它使得我们能轻而易举的处理来自于客户端与服务器端之间的请求.
+GraphQl是一个查询语言,通过它能轻而易举的处理客户端与服务器之间的请求.
 GraphQl通过Relay框架与React集成在一起.
-这对于处理高级的服务器请求与JavaScript APIs来说无疑是重要的趋势并且它还是一个新的语言何不一试?
+如果你要处理高级的服务器请求与JS APIs,那它对你来说无疑是一个重要的趋势,何况它还是一个全新的语言,何不try一下呢.
 
 同时也可以参考: [20 Top Web Development Companies For Startups and SMEs | 2019](https://medium.com/swlh/20-web-development-companies-to-hire-best-website-developers-b778545efa3c)
 
@@ -36,8 +37,12 @@ GraphQl通过Relay框架与React集成在一起.
 Facebook在生产环境中使用Reason来驱动Messenger
 >Facebook Messenger是一个提供文字和语音服务的即时通讯软件／应用程序，于2011年8月9日发表，用户可以透过网站或移动装置向其他用户传送文字、图片、动画、语音和短片等多媒体讯息，而无需额外付费。)\
 
-Reason是一个Javascript的编译器(意思是可以运行JS,比像babel,TypeScript之类的,作者的意思大概是你如果会JS学习起来很简单).
-并且它还包括一个React的包裹器,它直接运行你写的Reason代码合并到React程序里面.(意思是React已经提供了对Reason的支持,毕竟它俩是一个爹生的)
+Reason是一个Javascript的编译器.
+>意思是可以运行JS,比像babel,TypeScript之类的,作者的意思大概是你如果会JS学习起来很简单
+
+并且它还包括一个React的包裹器,你写的Reason代码可以直接运行在React里面.
+>意思是React已经提供了对Reason的支持,毕竟它俩是一个爹生的
+
 
 Reason上一个函数式,静态类型的编程语言,它可以在单个页面中驱动整个web程序(类似于SPA)
 >科普:
@@ -84,8 +89,8 @@ Next.js所作的就是让你的JavaScript代码完整的运行在服务器端或
 你可以以最低的学习曲线与极少的代码构建服务器上的完整程序.
 
 
-如果你还没有接触过它的话,那无疑是非常值得学习的,特别是用于创建一个完整的程序时(前后端)它与React结合的非常好.
-2019年(原文2018年)可能会看到Next.js持续增长.
+如果你还没有接触过它的话,那无疑是非常值得学习的,特别是用于创建一个完整的程序时(前后端),并且它与React结合的非常好.
+2018年可能会看到Next.js持续升温.
 
 ## 5) React.js
 ![react.js](https://cdn-images-1.medium.com/max/1600/1*EVqCcmCPgpNKxU1wzcTHgw.png)
